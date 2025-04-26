@@ -5,7 +5,7 @@ const bodyParser = require("body-parser");
 const PORT = process.env.PORT || 8000;
 require('events').EventEmitter.defaultMaxListeners = 500;
 app.use('/',async (req, res, next) => {
-res.sendFile(__path + '/commander_panels.html')
+res.sendFile(__path + '/commande_panel.html')
 })
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
