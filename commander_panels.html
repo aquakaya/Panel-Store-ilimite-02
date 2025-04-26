@@ -1,0 +1,279 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Commander un Panel</title>
+  <meta name="description" content="Commandez votre panel avec panel store illimité-rapide, sécurisé, gratuit ou premium. Découvrez nos offres hébergées sur serveurs puissants.">
+  <meta name="keywords" content="panel, hébergement, exodus tech, panel gratuit, commander un panel, panel 2go, panel pro">
+  <meta name="author" content="DevAsk">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 40px;
+    }
+    .logo-panel {
+      font-size: 2.8rem;
+      font-weight: 700;
+      background: linear-gradient(to right, #1cb5e0, #000046);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      padding: 10px 25px;
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      border-radius: 20px;
+      box-shadow: 0 0 25px rgba(28, 181, 224, 0.4);
+      text-align: center;
+      margin-bottom: 30px;
+      transition: transform 0.4s ease;
+    }
+    .logo-panel:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 35px rgba(28, 181, 224, 0.6);
+    }
+    h1 {
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+   section-top {
+      background: rgba(255, 255, 255, 0.07);
+      border: 2px solid rgba(255, 255, 255, 0.15);
+      border-radius: 20px;
+      padding: 30px;
+      width: 95%;
+      max-width: 900px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 20px rgba(28, 181, 224, 0.2);
+    }
+    .sous-titre {
+      font-size: 1.2rem;
+      color: #e0f7ff;
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+    .container {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 40px;
+      border-radius: 20px;
+      width: 95%;
+      max-width: 1000px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(10px);
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    li {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 15px;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      font-weight: 600;
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+    li:hover {
+      background: rgba(255, 255, 255, 0.2);
+      transform: translateY(-5px) scale(1.03);
+    }
+    .btn-show, .btn-retour {
+      display: inline-block;
+      margin: 30px 10px;
+      padding: 14px 30px;
+      background: linear-gradient(135deg, #1cb5e0, #000046);
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: background 0.3s ease, transform 0.2s;
+    }
+    .btn-show:hover, .btn-retour:hover {
+      background: linear-gradient(135deg, #1cb5e0, #203a43);
+      transform: scale(1.05);
+    }
+    .panel-gratuit {
+      margin-top: 30px;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.07);
+      border-radius: 12px;
+    }
+    .panel-name {
+      font-weight: 600;
+      font-size: 1.1rem;
+      margin-bottom: 8px;
+    }
+    .panel-link-texte {
+      font-size: 0.9rem;
+      background: #fff;
+      color: #203a43;
+      padding: 8px 14px;
+      border-radius: 10px;
+      word-break: break-word;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-weight: 500;
+      display: inline-block;
+    }
+    .panel-link-texte:hover {
+      background: #1cb5e0;
+      color: #fff;
+    }
+    .explication-plus {
+      margin-top: 30px;
+      font-size: 1rem;
+      color: #cceeff;
+      text-align: center;
+      line-height: 1.6;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .footer-panel {
+      margin-top: 50px;
+      padding: 15px 30px;
+      border-radius: 15px;
+      background: rgba(255, 255, 255, 0.05);
+      box-shadow: 0 0 15px rgba(28, 181, 224, 0.3);
+      text-align: center;
+      font-size: 1rem;
+      color: #ccc;
+      max-width: 500px;
+    }
+    .footer-panel span {
+      font-weight: bold;
+      color: #1cb5e0;
+      text-shadow: 0 0 5px #1cb5e0;
+    }
+
+   footer-links {
+      margin-top: 10px;
+    }
+    .footer-links a {
+      color: #1cb5e0;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+      .btn-show, .btn-retour {
+        padding: 12px 22px;
+        font-size: 0.95rem;
+      }
+      ul {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="logo-panel">PANEL STORES ILLIMITÉ</div>
+
+  <div class="section-top">
+    <h1>Commandes de Panels</h1>
+    <div class="sous-titre">sélectionné une offre panel</div>
+    <p style="text-align:center; max-width:800px;">
+      Sur cette page, vous pouvez commander différents panels selon vos besoins. Nos panels sont hébergés sur des serveurs rapides et sécurisés, et nous offrons également une sélection de panels gratuits régulièrement mise à jour.
+    </p>
+  </div>
+
+  <!-- PUB AdSense -->
+  <ins class="adsbygoogle"
+       style="display:block; text-align:center;"
+       data-ad-client="ca-pub-5604169839900644"
+       data-ad-slot="1234567890"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+
+  <div class="container">
+    <ul>
+      <li onclick="goToForm('Panel 2 Go - Basique')">Panel 2 Go - Basique</li>
+      <li onclick="goToForm('Panel 4 Go - Standard')">Panel 4 Go - Standard</li>
+      <li onclick="goToForm('Panel 6 Go - Avancé')">Panel 6 Go - Avancé</li>
+      <li onclick="goToForm('Panel 10 Go - Pro')">Panel 10 Go - Pro</li>
+      <li onclick="goToForm('Panel Illimité - Ultimate')">Panel Illimité - Ultimate</li>
+    </ul>
+
+    <button class="btn-show" onclick="loadFreePanels()">Voir les Panels Gratuits Utilisable une fois</button>
+
+    <ul id="free-panels" class="panel-gratuit"></ul>
+
+    <div class="explication-plus">
+      Nos panels gratuits sont proposés à des fins de test ou de découverte. Ils peuvent contenir moins de fonctionnalités que les versions payantes, mais restent une excellente solution pour débuter ou tester nos services.
+      <br><br>
+      Les panels payants vous offrent un contrôle complet, une rapidité accrue et une stabilité optimale. N’hésitez pas à nous contacter pour toute demande personnalisée.
+    </div>
+  </div>
+
+  <footer class="footer-panel">
+    <p>Panel Store By <span>Dev-Ask</span></p>
+    <div class="footer-links">
+    </div>
+  </footer>
+
+  <script>
+    function goToForm(panel) {
+      window.location.href = `commande_panel.html?panel=${encodeURIComponent(panel)}`;
+    }
+
+    function loadFreePanels() {
+      fetch('https://docs.google.com/spreadsheets/d/1vDlBhuq5skBpqMvYdrSgkRedprlQGtgk5O-FY37Biko/gviz/tq?tqx=out:csv')
+        .then(response => response.text())
+        .then(data => {
+          const rows = data.split("\n").slice(1);
+          const list = document.getElementById("free-panels");
+          list.innerHTML = "";
+
+          rows.forEach(row => {
+            const [nom, lien] = row.split(",");
+            if (nom && lien) {
+              const trimmedLink = lien.trim();
+              const li = document.createElement("li");
+              li.innerHTML = `
+                <span class="panel-name">${nom.trim()}</span>
+                <div class="panel-link-texte" onclick="copyToClipboard('${trimmedLink}')">${trimmedLink}</div>
+              `;
+              list.appendChild(li);
+            }
+          });
+        })
+        .catch(error => {
+          alert("Erreur lors du chargement des panels gratuits.");
+          console.error(error);
+        });
+    }
+
+    function copyToClipboard(text) {
+      navigator.clipboard.writeText(text).then(() => {
+        alert("Lien copié !");
+      }, err => {
+        console.error('Erreur de copie :', err);
+      });
+    }
+  </script>
+</body>
+</html>
