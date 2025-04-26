@@ -1,169 +1,675 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Commande de Panel store illimité</title>
-  <meta name="description" content="Passe ta commande de panel sécurisé et rapide avec Store panel." />
-  <meta name="robots" content="index, follow" />
-  <meta name="author" content="Dev Ask" />
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+	<head>
+		<meta name="keywords" content="taka-anime, , scan, taka-anime, vostfr, vf, streaming, streaming vostfr, streaming vf, sans pubs, streaming sans pubs, streaming scan">
+		<meta name="description" content="Taka-anime | Site de streaming et de catalogage pour animes et scans.">
+		<title>Aide | Taka-anime - Streaming et catalogage d'animes et scans.</title>
+		<link rel="canonical" href="https://anime-sama.fr/" />
+		<!-- prérequis -->
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="robots" content="index, nofollow">
 
-  <!-- AdSense -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5604169839900644" crossorigin="anonymous"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QK64GJ58E9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: radial-gradient(ellipse at top left, #0f0c29, #302b63, #24243e);
-      color: #fff;
-      padding: 20px;
-    }
-    h1 {
-      font-family: 'Orbitron', sans-serif;
-      text-align: center;
-      font-size: 2.5rem;
-      color: #00ffe0;
-      text-shadow: 0 0 12px #00ffe0;
-      margin-bottom: 30px;
-    }
-    .intro {
-      max-width: 700px;
-      margin: auto;
-      text-align: center;
-      color: #ccc;
-      font-size: 1rem;
-      line-height: 1.6;
-    }
-    form {
-      max-width: 500px;
-      margin: 30px auto;
-      background: rgba(255, 255, 255, 0.05);
-      padding: 30px 25px;
-      border-radius: 20px;
-      box-shadow: 0 0 20px rgba(0,255,255,0.15);
-    }
-    p {
-      font-weight: 500;
-      margin-bottom: 10px;
-    }
-    #panelChoisi {
-      font-size: 1.2rem;
-      font-weight: bold;
-      color: #00ffe0;
-    }
-    input {
-      width: 100%;
-      padding: 14px;
-      margin: 20px 0;
-      border-radius: 10px;
-      border: none;
-      background: rgba(255, 255, 255, 0.15);
-      color: white;
-      font-size: 1rem;
-    }
-    .btns {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
-    button {
-      width: 100%;
-      padding: 14px;
-      border: none;
-      border-radius: 10px;
-      background: linear-gradient(135deg, #00ffe0, #006eff);
-      color: #000;
-      font-weight: bold;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: transform 0.3s ease;
-    }
-    button:hover {
-      transform: scale(1.03);
-      background: linear-gradient(135deg, #00d2ff, #00ffe0);
-    }
-    .back-home {
-      text-align: center;
-      margin-top: 25px;
-    }
-    .back-home a {
-      color: #00ffe0;
-      font-weight: bold;
-      text-decoration: none;
-    }
-    footer {
-      margin-top: 50px;
-      text-align: center;
-      font-size: 0.9rem;
-      color: #ccc;
-    }
-    footer span {
-      color: #00ffe0;
-      font-weight: bold;
-    }
-    footer a {
-      color: #00ffe0;
-      margin: 0 6px;
-      text-decoration: none;
-    }
-    @media screen and (max-width: 480px) {
-      h1 {
-        font-size: 1.8rem;
-      }
-      form {
-        padding: 20px;
-      }
+  gtag('config', 'G-QK64GJ58E9');
+</script>
 
-   input, button {
-        font-size: 1rem;
-      }
-    }
-  </style>
-</head>
-<body>
+<!-- mini icone onglets -->
+<link rel="icon" type="image/x-icon" href="https://anime-sama.fr/images/favicon.ico">
+<link rel="shortcut icon" href="https://taka-anime.fr/images/shortcut-icon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="https://taka-anime.fr/images/icon.png">
 
-  <h1>Commande de Panel</h1>
+<!-- Sources CSS Local -->
+<link rel="stylesheet" href="/css/output_min.css">
+<link rel="stylesheet" href="/css/default.css?v=1.2">
+<!-- Source jQuery Local -->
+<script src="/node_modules/jquery/dist/jquery.min.js"></script>
+<!--<script src="/js/defaut/script_defaut.js"></script>-->
 
-  <main>
-    <div class="intro">
-      <p>Chez Panel Store, nous simplifions la gestion de vos services en ligne grâce à nos panels automatisés. Sélectionnez votre panel préféré, entrez votre numéro WhatsApp ou Telegram, et recevez instantanément votre lien ou configuration personnalisée.</p>
-      <p>Pourquoi choisir Panel Stores ? Nos panels sont conçus pour offrir une expérience fluide, fiable et personnalisée. Que vous soyez développeur freelance, administrateur réseau ou simple passionné de technologie, notre équipe vous accompagne dans vos projets avec des solutions prêtes à l’emploi.</p>
-      <p>Nous privilégions la sécurité, la rapidité et la simplicité d’utilisation. Nos outils sont régulièrement mis à jour pour s’adapter aux nouvelles tendances du marché digital.</p>
-    </div>
-    <form>
-      <p>Panel sélectionné : <span id="panelChoisi">Aucun</span></p>
-      <input type="text" id="numeroUser" placeholder="Ton numéro WhatsApp ou Telegram" required />
-      <div class="btns">
-        <button type="button" onclick="envoyerWhatsApp()">Envoyer sur WhatsApp</button>
-      </div>
-    </form>
-  </main>
+<!-- (OBLIGAOIRE LOI RGPD EUROPEENNES) InMobi Choice. Consent Manager Tag v3.0 (for TCF 2.2) -->
+<script type="text/javascript" async=true>
+(function() {
+var host = window.location.hostname;
+var element = document.createElement('script');
+var firstScript = document.getElementsByTagName('script')[0];
+var url = 'https://cmp.inmobi.com'
+	.concat('/choice/', 'n5-DbqbxTAvSJ', '/', host, '/choice.js?tag_version=V3');
+var uspTries = 0;
+var uspTriesLimit = 3;
+element.async = true;
+element.type = 'text/javascript';
+element.src = url;
 
-  <div class="back-home">
-    <a href="pair.html">← Retour à l'accueil</a>
-  </div>
+firstScript.parentNode.insertBefore(element, firstScript);
 
-  <footer>
-    Développé avec passion par <span>Dev Ask</span><br>
-    Tous droits réservés © 2025
-  </footer>
+function makeStub() {
+	var TCF_LOCATOR_NAME = '__tcfapiLocator';
+	var queue = [];
+	var win = window;
+	var cmpFrame;
+	function addFrame() {
+	var doc = win.document;
+	var otherCMP = !!(win.frames[TCF_LOCATOR_NAME]);
+	if (!otherCMP) {
+		if (doc.body) {
+		var iframe = doc.createElement('iframe');
+		iframe.style.cssText = 'display:none';
+		iframe.name = TCF_LOCATOR_NAME;
+		doc.body.appendChild(iframe);
+		} else {
+		setTimeout(addFrame, 5);
+		}
+	}
+	return !otherCMP;
+	}
+	function tcfAPIHandler() {
+	var gdprApplies;
+	var args = arguments;
+	if (!args.length) {
+		return queue;
+	} else if (args[0] === 'setGdprApplies') {
+		if (
+		args.length > 3 &&
+		args[2] === 2 &&
+		typeof args[3] === 'boolean'
+		) {
+		gdprApplies = args[3];
+		if (typeof args[2] === 'function') {
+			args[2]('set', true);
+		}
+		}
+	} else if (args[0] === 'ping') {
+		var retr = {
+		gdprApplies: gdprApplies,
+		cmpLoaded: false,
+		cmpStatus: 'stub'
+		};
+		if (typeof args[2] === 'function') {
+		args[2](retr);
+		}
+	} else {
+		if(args[0] === 'init' && typeof args[3] === 'object') {
+		args[3] = Object.assign(args[3], { tag_version: 'V3' });
+		}
+		queue.push(args);
+	}
+	}
+	function postMessageEventHandler(event) {
+	var msgIsString = typeof event.data === 'string';
+	var json = {};
+	try {
+		if (msgIsString) {
+		json = JSON.parse(event.data);
+		} else {
+		json = event.data;
+		}
+	} catch (ignore) {}
+	var payload = json.__tcfapiCall;
+	if (payload) {
+		window.__tcfapi(
+		payload.command,
+		payload.version,
+		function(retValue, success) {
+			var returnMsg = {
+			__tcfapiReturn: {
+				returnValue: retValue,
+				success: success,
+				callId: payload.callId
+			}
+			};
+			if (msgIsString) {
+			returnMsg = JSON.stringify(returnMsg);
+			}
+			if (event && event.source && event.source.postMessage) {
+			event.source.postMessage(returnMsg, '*');
+			}
+		},
+		payload.parameter
+		);
+	}
+			if (win.frames[TCF_LOCATOR_NAME]) {
+		cmpFrame = win;
+		break;
+		}
+	} catch (ignore) {}
+	if (win === window.top) {
+		break;
+	}
+	win = win.parent;
+	}
+	if (!cmpFrame) {
+	addFrame();
+	win.__tcfapi = tcfAPIHandler;
+	win.addEventListener('message', postMessageEventHandler, false);
+	}
+};
 
-  <script>
-    const panel = new URLSearchParams(window.location.search).get('panel');
-    document.getElementById('panelChoisi').innerText = panel || "Aucun";
-    function envoyerWhatsApp() {
-      const numero = '24105896183' document.getElementById('numeroUser').value.trim();
-      if (!numero) return alert("Veuillez entrer votre numéro.");
-      const message = `Commande de panel :\nPanel : ${panel}\nClient : ${numero}`;
-      const numAdmin = '';
-      window.open(`https://wa.me/${numAdmin}?text=${encodeURIComponent(message)}`, '_blank');
-    }
-  </script>
+makeStub();
 
-</body>
+var uspStubFunction = function() {
+	var arg = arguments;
+	if (typeof window.__uspapi !== uspStubFunction) {
+	setTimeout(function() {
+		if (typeof window.__uspapi !== 'undefined') {
+		window.__uspapi.apply(window.__uspapi, arg);
+		}
+	}, 500);
+	}
+};
+
+var checkIfUspIsReady = function() {
+	uspTries++;
+	if (window.__uspapi === uspStubFunction && uspTries < uspTriesLimit) {
+	console.warn('USP is not accessible');
+	} else {
+	clearInterval(uspInterval);
+	}
+};
+
+if (typeof window.__uspapi === 'undefined') {
+	window.__uspapi = uspStubFunction;
+	var uspInterval = setInterval(checkIfUspIsReady, 6000);
+}
+})();
+</script>
+<!-- End InMobi Choice. Consent Manager Tag v3.0 (for TCF 2.2) -->
+<!-- Adcash -->
+<script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+<!-- Autotag Adcash (anti adblock) -->
+<!--<script type="text/javascript" src="/z-q7kjfluml8"></script>-->
+
+<!-- NAV BAR (fixed z-50)-->
+<nav class="border-b-2 border-sky-900 mx-auto inset-x-0 top-0 flex" style="background: rgb(0,0,0);background: linear-gradient(90deg, rgba(0,0,0,0.9624935535902388) 100%, rgba(0,0,0,0.9596845648261938) 100%);">
+	<!-- Barres pour menu mobile -->
+	<button class="block lg:hidden navbar-burger text-slate-200 hover:text-sky-500 transition-all duration-200 flex items-center ml-3 mr-auto" alt="Menu mobile">
+		<svg class="block h-6 w-6 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg>
+	</button>
+	<!-- searchbar sur mobile -->
+	<a class="flex uppercase block mr-3 lg:hidden bg-black transition-all duration-200">
+		<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mt-3.5 m-3 text-center text-base text-white" viewBox="0 0 20 20" fill="currentColor">
+			<path d="M9 9a2 2 0 114 0 2 2 0 01-4 0z" />
+			<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13a4 4 0 00-3.446 6.032l-2.261 2.26a1 1 0 101.414 1.415l2.261-2.261A4 4 0 1011 5z" clip-rule="evenodd" />
+		</svg>
+		<input name="search_text" id="search_text" type="search" name="q" class="search_text w-40 border-0 placeholder-opacity-40 placeholder-slate-200 uppercase text-white text-sm font-extrabold bg-black transition-all duration-200" placeholder="Rechercher..." autocomplete="off"/>
+		<div style="z-index:999;" id="result" class="result bg-black bg-opacity-90 absolute mt-14 w-52 h-auto rounded shadow-lg shadow-black border-1 border-white border-opacity-50"></div>
+	</a>
+		<!-- logos (pc & mobile) -->
+	<a href="https://anime-sama.fr/" class="flex m-2 font-extrabold uppercase text-slate-200 hover:text-sky-500 transition-all duration-200">
+		<img class="h-9 hidden lg:block object-cover object-right hover:brightness-50 transition-all duration-200" src="https://cdn.statically.io/gh/Taka-anime/IMG/img/autres/logo_banniere.png" alt="Logo TA Banniere"/>
+		<img class="h-9 pr-2 block lg:hidden object-cover object-right hover:brightness-50 transition-all duration-200" src="https://cdn.statically.io/gh/Taka-anime/IMG/img/autres/logo.png" alt="Logo TA"/>
+	</a>
+	<a href="https://www.paypal.com/donate/?hosted_button_id=3FBNLMGT3JAJ2"><img class="h-6 mt-4 md:h-7 pr-2 md:mt-3.5 object-cover object-right hover:brightness-50 transition-all duration-200" src="https://cdn.statically.io/gh/Taka-anime/IMG/img/autres/flag_Gab.png" alt="Drapeau Gab"/></a>
+	<!-- réseaux navbar -->
+	<div class="inline-flex hidden lg:block text-center mt-3 ml-2">
+		<a href="https://twitter.com/anime_samafr" class="inline-flex text-center text-white hover:brightness-50 transition-all duration-200" alt="Twitter">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-5 h-5 m-2"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+		</a>
+		<a href="https://discord.gg/QNVxs7JYXb" class="inline-flex text-center text-white hover:brightness-50 transition-all duration-200" alt="Discord">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="w-5 h-5 m-2"><path fill="currentColor" d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z"/></svg>
+		</a>
+	</div>
+	<div class="flex hidden lg:block ml-auto text-lg">
+		<!-- searchbar sur pc -->
+		<a class="inline-flex bg-black transition-all duration-200">
+			<svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 m-3 mt-3.5 text-base font-extrabold text-white" viewBox="0 0 20 20" fill="currentColor">
+				<path d="M9 9a2 2 0 114 0 2 2 0 01-4 0z" />
+				<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13a4 4 0 00-3.446 6.032l-2.261 2.26a1 1 0 101.414 1.415l2.261-2.261A4 4 0 1011 5z" clip-rule="evenodd" />
+			</svg>
+			<input name="search_text" id="search_text" type="search" name="q" class="search_text border-0 placeholder-opacity-50 placeholder-slate-200 uppercase text-base font-extrabold bg-black text-white transition-all duration-200" placeholder="Rechercher..." autocomplete="off"/>
+			<div style="z-index:999;" id="result" class="result bg-black bg-opacity-90 absolute mt-14 w-72 h-auto rounded shadow-lg shadow-black border-1 border-white border-opacity-50"></div>
+		</a>
+		<!-- catalogue -->
+		<a href="https://anime-sama.fr/catalogue" class="inline-flex uppercase text-base font-extrabold text-white hover:text-sky-500 hover:bg-gray-700 transition-all duration-200">
+			<svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 my-3.5 mx-3 xl:mr-0" viewBox="0 0 20 20" fill="currentColor">
+				<path d="M7 3a1 1 0 000 2h6a1 1 0 100-2H7zM4 7a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zM2 11a2 2 0 012-2h12a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4z" />
+			</svg>
+			<p class="hidden xl:block p-3 m-1">catalogue</p>
+		</a>		
+		<!-- planning -->
+		<a href="https://anime-sama.fr/planning" class="inline-flex uppercase text-base font-extrabold text-white hover:text-sky-500 hover:bg-gray-700 transition-all duration-200">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-7 w-7 my-3.5 mx-3 xl:mr-0">
+				<path d="M12.75 12.75a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM7.5 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM8.25 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM9.75 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM10.5 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM12.75 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM14.25 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM15 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM16.5 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM15 12.75a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM16.5 13.5a.75.75 0 100-1.5.75.75 0 000 1.5z" />
+				<path fill-rule="evenodd" d="M6.75 2.25A.75.75 0 017.5 3v1.5h9V3A.75.75 0 0118 3v1.5h.75a3 3 0 013 3v11.25a3 3 0 01-3 3H5.25a3 3 0 01-3-3V7.5a3 3 0 013-3H6V3a.75.75 0 01.75-.75zm13.5 9a1.5 1.5 0 00-1.5-1.5H5.25a1.5 1.5 0 00-1.5 1.5v7.5a1.5 1.5 0 001.5 1.5h13.5a1.5 1.5 0 001.5-1.5v-7.5z" clip-rule="evenodd" />
+			</svg>
+			<p class="hidden xl:block p-3 m-1">planning</p>
+		</a>
+		<!-- page aide -->
+		<a href="https://anime-sama.fr/aide" class="inline-flex uppercase text-base font-extrabold text-white hover:text-sky-500 hover:bg-gray-700 transition-all duration-200">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-7 w-7 my-3.5 mx-3 xl:mr-0">
+				<path fill-rule="evenodd" d="M11.828 2.25c-.916 0-1.699.663-1.85 1.567l-.091.549a.798.798 0 01-.517.608 7.45 7.45 0 00-.478.198.798.798 0 01-.796-.064l-.453-.324a1.875 1.875 0 00-2.416.2l-.243.243a1.875 1.875 0 00-.2 2.416l.324.453a.798.798 0 01.064.796 7.448 7.448 0 00-.198.478.798.798 0 01-.608.517l-.55.092a1.875 1.875 0 00-1.566 1.849v.344c0 .916.663 1.699 1.567 1.85l.549.091c.281.047.508.25.608.517.06.162.127.321.198.478a.798.798 0 01-.064.796l-.324.453a1.875 1.875 0 00.2 2.416l.243.243c.648.648 1.67.733 2.416.2l.453-.324a.798.798 0 01.796-.064c.157.071.316.137.478.198.267.1.47.327.517.608l.092.55c.15.903.932 1.566 1.849 1.566h.344c.916 0 1.699-.663 1.85-1.567l.091-.549a.798.798 0 01.517-.608 7.52 7.52 0 00.478-.198.798.798 0 01.796.064l.453.324a1.875 1.875 0 002.416-.2l.243-.243c.648-.648.733-1.67.2-2.416l-.324-.453a.798.798 0 01-.064-.796c.071-.157.137-.316.198-.478.1-.267.327-.47.608-.517l.55-.091a1.875 1.875 0 001.566-1.85v-.344c0-.916-.663-1.699-1.567-1.85l-.549-.091a.798.798 0 01-.608-.517 7.507 7.507 0 00-.198-.478.798.798 0 01.064-.796l.324-.453a1.875 1.875 0 00-.2-2.416l-.243-.243a1.875 1.875 0 00-2.416-.2l-.453.324a.798.798 0 01-.796.064 7.462 7.462 0 00-.478-.198.798.798 0 01-.517-.608l-.091-.55a1.875 1.875 0 00-1.85-1.566h-.344zM12 15.75a3.75 3.75 0 100-7.5 3.75 3.75 0 000 7.5z" clip-rule="evenodd" />
+			</svg>
+			<p class="hidden xl:block p-3 m-1">aide</p>
+		</a>
+		<!-- profil -->
+		<a href="https://anime-sama.fr/profil" class="inline-flex uppercase text-base font-extrabold text-white hover:text-sky-500 hover:bg-gray-700 transition-all duration-200">
+			<svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 my-3.5 mx-3 xl:mr-0" viewBox="0 0 20 20" fill="currentColor">
+				<path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z" clip-rule="evenodd" />
+			</svg>
+			<p class="hidden xl:block p-3 m-1">profil</p>
+		</a>
+	</div>
+
+</nav>
+
+<!-- MENU GAUCHE -->
+<div class="navbar-menu relative z-50 hidden">
+	<div class="navbar-backdrop fixed inset-0 bg-neutral-900 opacity-75"></div>	
+	<nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 overflow-y-auto" style="background: rgb(0,0,0);background: linear-gradient(90deg, rgba(0,0,0,0.951257598534059) 100%, rgba(0,0,0,0.8810328794329354) 100%);">
+		<div class="flex items-center mb-8 border-b-2 border-sky-900">
+			<a href="https://anime-sama.fr/" class="font-extrabold mt-2 mr-auto uppercase text-slate-200 hover:text-sky-500 hover:border-sky-500 transition-all duration-200">
+				<img class="h-9 object-cover mr-auto mb-2 hover:brightness-50 transition-all duration-200" src="https://cdn.statically.io/gh/Taka-anime/IMG/img/autres/logo_banniere.png" alt="Logo TA Banniere"/>
+			</a>
+			<button class="navbar-close">
+				<svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-sky-700 transition-all duration-200" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+				</svg>
+			</button>
+		</div>
+		<!-- ancienne barre search ici -->
+		<div>
+			<ul>
+				<li class="mb-1">
+					<a href="https://anime-sama.fr/catalogue" class="flex p-2 text-sm font-bold text-white hover:bg-gray-700 hover:text-sky-400 rounded">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 my-3.5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+							<path d="M7 3a1 1 0 000 2h6a1 1 0 100-2H7zM4 7a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zM2 11a2 2 0 012-2h12a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4z" />
+						</svg>
+						<p class="p-5 pt-4.5 uppercase">catalogue</p>
+					</a>
+				</li>
+				<li class="mb-1">
+					<a href="https://anime-sama.fr/planning" class="flex p-2 text-sm font-bold text-white hover:bg-gray-700 hover:text-sky-400 rounded">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-7 w-7 my-3.5 ml-2">
+							<path d="M12.75 12.75a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM7.5 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM8.25 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM9.75 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM10.5 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM12.75 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM14.25 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM15 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM16.5 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM15 12.75a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM16.5 13.5a.75.75 0 100-1.5.75.75 0 000 1.5z" />
+							<path fill-rule="evenodd" d="M6.75 2.25A.75.75 0 017.5 3v1.5h9V3A.75.75 0 0118 3v1.5h.75a3 3 0 013 3v11.25a3 3 0 01-3 3H5.25a3 3 0 01-3-3V7.5a3 3 0 013-3H6V3a.75.75 0 01.75-.75zm13.5 9a1.5 1.5 0 00-1.5-1.5H5.25a1.5 1.5 0 00-1.5 1.5v7.5a1.5 1.5 0 001.5 1.5h13.5a1.5 1.5 0 001.5-1.5v-7.5z" clip-rule="evenodd" />
+						</svg>
+						<p class="p-5 pt-4.5 uppercase">planning</p>
+					</a>
+				</li>
+				<li class="mb-1">
+					<a href="https://anime-sama.fr/aide" class="flex p-2 text-sm font-bold text-white hover:bg-gray-700 hover:text-sky-400 rounded">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-7 w-7 my-3.5 ml-2">
+							<path fill-rule="evenodd" d="M11.828 2.25c-.916 0-1.699.663-1.85 1.567l-.091.549a.798.798 0 01-.517.608 7.45 7.45 0 00-.478.198.798.798 0 01-.796-.064l-.453-.324a1.875 1.875 0 00-2.416.2l-.243.243a1.875 1.875 0 00-.2 2.416l.324.453a.798.798 0 01.064.796 7.448 7.448 0 00-.198.478.798.798 0 01-.608.517l-.55.092a1.875 1.875 0 00-1.566 1.849v.344c0 .916.663 1.699 1.567 1.85l.549.091c.281.047.508.25.608.517.06.162.127.321.198.478a.798.798 0 01-.064.796l-.324.453a1.875 1.875 0 00.2 2.416l.243.243c.648.648 1.67.733 2.416.2l.453-.324a.798.798 0 01.796-.064c.157.071.316.137.478.198.267.1.47.327.517.608l.092.55c.15.903.932 1.566 1.849 1.566h.344c.916 0 1.699-.663 1.85-1.567l.091-.549a.798.798 0 01.517-.608 7.52 7.52 0 00.478-.198.798.798 0 01.796.064l.453.324a1.875 1.875 0 002.416-.2l.243-.243c.648-.648.733-1.67.2-2.416l-.324-.453a.798.798 0 01-.064-.796c.071-.157.137-.316.198-.478.1-.267.327-.47.608-.517l.55-.091a1.875 1.875 0 001.566-1.85v-.344c0-.916-.663-1.699-1.567-1.85l-.549-.091a.798.798 0 01-.608-.517 7.507 7.507 0 00-.198-.478.798.798 0 01.064-.796l.324-.453a1.875 1.875 0 00-.2-2.416l-.243-.243a1.875 1.875 0 00-2.416-.2l-.453.324a.798.798 0 01-.796.064 7.462 7.462 0 00-.478-.198.798.798 0 01-.517-.608l-.091-.55a1.875 1.875 0 00-1.85-1.566h-.344zM12 15.75a3.75 3.75 0 100-7.5 3.75 3.75 0 000 7.5z" clip-rule="evenodd" />
+						</svg>
+						<p class="p-5 pt-4.5 uppercase">page aide</p>
+					</a>
+				</li>
+				<li class="mb-1">
+					<a href="https://anime-sama.fr/profil" class="flex p-2 text-sm font-bold text-white hover:bg-gray-700 hover:text-sky-400 rounded">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 my-3.5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+							<path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z" clip-rule="evenodd" />
+						</svg>
+						<p class="p-5 pt-4.5 uppercase">profil</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="mt-auto">
+			<!-- reseaux -->
+			<div class="flex flex-wrap justify-center">
+				<a href="https://twitter.com/anime_samafr" class="text-center text-white hover:brightness-50 transition-all duration-200 px-2" alt="Twitter">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-5 h-5 m-2"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+				</a>
+				<a href="https://discord.gg/QNVxs7JYXb" class="text-center text-white hover:brightness-50 transition-all duration-200 px-2" alt="Discord">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="w-5 h-5 m-2"><path fill="currentColor" d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z"/></svg>
+				</a>
+			</div>
+			<p class="my-4 text-xs text-center text-gray-400 font-bold">© Taka-anime - Tous droits réservés.</p>
+		</div>
+	</nav>
+</div>
+
+<!-- bouton to top -->
+<button style="z-index:300;" onclick="topFunction();" id="topBtn" class="bg-slate-200 fixed bottom-0 right-0 opacity-30 hover:opacity-100 cursor-pointer rounded p-2 m-7 transition-all duration-200">
+	<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-black" viewBox="0 0 20 20" fill="currentColor">
+		<path fill-rule="evenodd" d="M3.293 9.707a1 1 0 010-1.414l6-6a1 1 0 011.414 0l6 6a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L4.707 9.707a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+	</svg>
+</button>
+
+<script>
+	/* +CARTES TEMPLATES */
+	//template cartes DEFAUT
+	function carte(nom, url, image){
+		document.write('<div class="shrink-0 w-32 md:w-44 outline outline-gray-700 outline-2 bg-zinc-800 bg-opacity-75 rounded-lg overflow-hidden my-14 mr-3 ml-2 md:ml-5 shadow-lg shadow-black hover:shadow-zinc-900 transition-all duration-200 cursor-pointer"><a href="https://anime-sama.fr/catalogue/'+url+'"><img class="w-full h-30 md:h-42 object-cover hover:opacity-75 transition-all duration-200 cursor-pointer" src="https://cdn.statically.io/gh/Taka-anime/IMG/img/contenu/'+image+'.jpg" alt="'+image+'"><div class="px-4 py-2"><h1 class="text-gray-200 font-semibold text-xs text-center uppercase hover:text-clip">'+nom+'</h1></div></a></div>');
+	}
+	//template cartes PLANNING (anime / scan)
+	function cartePlanningAnime(nom, url, image, heure, probleme, langue){
+		if(probleme === "Reporté") document.write('<div class="divOeuvrePlanning Anime '+langue+' shrink-0 outline outline-sky-800 outline-1 bg-slate-900 rounded overflow-hidden shadow-lg shadow-black hover:shadow-zinc-900 transition-all duration-200 cursor-pointer"><a href="https://anime-sama.fr/catalogue/'+url+'"><img class="imgOeuvrePlanning w-full object-cover opacity-50 transition-all duration-200 cursor-pointer" src="https://cdn.statically.io/gh/Taka-anime/IMG/img/contenu/'+image+'.jpg" alt="'+image+'"><div class="px-4 py-2"><h1 class="text-gray-200 font-semibold text-sm text-center uppercase line-clamp-2 md:line-clamp-3 hover:text-clip opacity-50">'+nom+'</h1><hr class="border-t border-slate-500 mt-2"></hr><div class="flex flex-wrap justify-center"><button class="rounded rounded-lg bg-opacity-50 text-blue-100 text-md font-medium mx-0.5 mt-1 px-1 py-0.5 Heure opacity-50">'+heure+'</button><button class="rounded rounded-lg text-red-600 text-sm font-semibold mx-0.5 mt-1 py-0.5 Probleme">'+probleme+'</button></div><div class="flex justify-center opacity-50"><button class="rounded rounded-xs bg-sky-900 text-white text-xs font-medium mx-0.5 mt-1 px-1 py-0.5">Anime</button><button class="rounded rounded-xs bg-opacity-50 bg-blue-600 text-white text-xs font-medium uppercase mx-0.5 mt-1 px-1 py-0.5">'+langue+'</button></div></div></a></div>');
+		else document.write('<div class="divOeuvrePlanning Anime '+langue+' shrink-0 outline outline-sky-800 outline-1 bg-slate-900 rounded overflow-hidden shadow-lg shadow-black hover:shadow-zinc-900 transition-all duration-200 cursor-pointer"><a href="https://anime-sama.fr/catalogue/'+url+'"><img class="imgOeuvrePlanning w-full object-cover hover:opacity-75 transition-all duration-200 cursor-pointer" src="https://cdn.statically.io/gh/Anime-Sama/IMG/img/contenu/'+image+'.jpg" alt="'+image+'"><div class="px-4 py-2"><h1 class="text-gray-200 font-semibold text-sm text-center uppercase line-clamp-2 md:line-clamp-3 hover:text-clip">'+nom+'</h1><hr class="border-t border-slate-500 mt-2"></hr><div class="flex flex-wrap justify-center"><button class="rounded rounded-lg bg-opacity-50 text-blue-100 text-md font-medium mx-0.5 mt-1 px-1 py-0.5 Heure">'+heure+'</button><button class="rounded rounded-lg bg-opacity-50 text-red-600 text-xs font-medium mx-0.5 mt-1 py-0.5 Probleme">'+probleme+'</button></div><div class="flex justify-center"><button class="rounded rounded-xs bg-sky-900 text-white text-xs font-medium mx-0.5 mt-1 px-1 py-0.5">Anime</button><button class="rounded rounded-xs bg-opacity-50 bg-blue-600 text-white text-xs font-medium uppercase mx-0.5 mt-1 px-1 py-0.5">'+langue+'</button></div></div></a></div>');
+	}
+	function cartePlanningAnimePasAS(nom, url, image, heure, probleme, langue){
+		if(probleme === "Reporté") document.write('<div class="divOeuvrePlanning Anime '+langue+' shrink-0 outline outline-sky-800 outline-1 bg-slate-900 rounded overflow-hidden shadow-lg shadow-black hover:shadow-zinc-900 transition-all duration-200 cursor-pointer"><a href="'+url+'"><img class="imgOeuvrePlanning w-full object-cover opacity-50 transition-all duration-200 cursor-pointer" src="https://cdn.statically.io/gh/Anime-Sama/IMG/img/contenu/'+image+'.jpg" alt="'+image+'"><div class="px-4 py-2"><h1 class="text-gray-200 font-semibold text-sm text-center uppercase line-clamp-2 md:line-clamp-3 hover:text-clip opacity-50">'+nom+'</h1><hr class="border-t border-slate-500 mt-2"></hr><div class="flex flex-wrap justify-center"><button class="rounded rounded-lg bg-opacity-50 text-blue-100 text-md font-medium mx-0.5 mt-1 px-1 py-0.5 Heure opacity-50">'+heure+'</button><button class="rounded rounded-lg text-red-600 text-sm font-semibold mx-0.5 mt-1 py-0.5 Probleme">'+probleme+'</button></div><div class="flex justify-center opacity-50"><button class="rounded rounded-xs bg-sky-900 text-white text-xs font-medium mx-0.5 mt-1 px-1 py-0.5">Anime</button><button class="rounded rounded-xs bg-opacity-50 bg-blue-600 text-white text-xs font-medium uppercase mx-0.5 mt-1 px-1 py-0.5">'+langue+'</button></div></div></a></div>');
+		else document.write('<div class="divOeuvrePlanning Anime '+langue+' shrink-0 outline outline-sky-800 outline-1 bg-slate-900 rounded overflow-hidden shadow-lg shadow-black hover:shadow-zinc-900 transition-all duration-200 cursor-pointer"><a href="'+url+'"><img class="imgOeuvrePlanning w-full object-cover hover:opacity-75 transition-all duration-200 cursor-pointer" src="https://cdn.statically.io/gh/Anime-Sama/IMG/img/contenu/'+image+'.jpg" alt="'+image+'"><div class="px-4 py-2"><h1 class="text-gray-200 font-semibold text-sm text-center uppercase line-clamp-2 md:line-clamp-3 hover:text-clip">'+nom+'</h1><hr class="border-t border-slate-500 mt-2"></hr><div class="flex flex-wrap justify-center"><button class="rounded rounded-lg bg-opacity-50 text-blue-100 text-md font-medium mx-0.5 mt-1 px-1 py-0.5 Heure">'+heure+'</button><button class="rounded rounded-lg bg-opacity-50 text-red-600 text-xs font-medium mx-0.5 mt-1 py-0.5 Probleme">'+probleme+'</button></div><div class="flex justify-center"><button class="rounded rounded-xs bg-sky-900 text-white text-xs font-medium mx-0.5 mt-1 px-1 py-0.5">Anime</button><button class="rounded rounded-xs bg-opacity-50 bg-blue-600 text-white text-xs font-medium uppercase mx-0.5 mt-1 px-1 py-0.5">'+langue+'</button></div></div></a></div>');
+	}
+	function cartePlanningScan(nom, url, image, heure, probleme, langue){
+		if(probleme === "Reporté") document.write('<div class="divOeuvrePlanning Scan shrink-0 outline outline-gray-500 outline-1 bg-zinc-900 rounded overflow-hidden shadow-lg shadow-black hover:shadow-zinc-900 transition-all duration-200 cursor-pointer"><a href="https://anime-sama.fr/catalogue/'+url+'"><img class="imgOeuvrePlanning w-full object-cover opacity-50 transition-all duration-200 cursor-pointer" src="https://cdn.statically.io/gh/Anime-Sama/IMG/img/contenu/'+image+'.jpg" alt="'+image+'"><div class="px-4 py-2"><h1 class="text-gray-200 font-semibold text-sm text-center uppercase line-clamp-2 md:line-clamp-3 hover:text-clip opacity-50">'+nom+'</h1><hr class="border-t border-slate-500 mt-2"></hr><div class="flex flex-wrap justify-center"><button class="rounded rounded-lg bg-opacity-50 text-blue-100 text-md font-medium mx-0.5 mt-1 px-1 py-0.5 Heure opacity-50">'+heure+'</button><button class="rounded rounded-lg text-red-600 text-sm font-semibold mx-0.5 mt-1 py-0.5 Probleme">'+probleme+'</button></div><div class="flex justify-center opacity-50"><button class="rounded rounded-xs bg-slate-700 text-white text-xs font-medium mx-0.5 mt-1 px-1 py-0.5">Scans</button><button class="rounded rounded-xs bg-gray-600 text-white text-xs font-medium uppercase mx-0.5 mt-1 px-1 py-0.5">'+langue+'</button></div></div></a></div>');
+		else document.write('<div class="divOeuvrePlanning Scan shrink-0 outline outline-gray-500 outline-1 bg-zinc-900 rounded overflow-hidden shadow-lg shadow-black hover:shadow-zinc-900 transition-all duration-200 cursor-pointer"><a href="https://anime-sama.fr/catalogue/'+url+'"><img class="imgOeuvrePlanning w-full object-cover hover:opacity-75 transition-all duration-200 cursor-pointer" src="https://cdn.statically.io/gh/Anime-Sama/IMG/img/contenu/'+image+'.jpg" alt="'+image+'"><div class="px-4 py-2"><h1 class="text-gray-200 font-semibold text-sm text-center uppercase line-clamp-2 md:line-clamp-3 hover:text-clip">'+nom+'</h1><hr class="border-t border-slate-500 mt-2"></hr><div class="flex flex-wrap justify-center"><button class="rounded rounded-lg bg-opacity-50 text-blue-100 text-md font-medium mx-0.5 mt-1 px-1 py-0.5 Heure">'+heure+'</button><button class="rounded rounded-lg bg-opacity-50 text-red-600 text-xs font-medium mx-0.5 mt-1 py-0.5 Probleme">'+probleme+'</button></div><div class="flex justify-center"><button class="rounded rounded-xs bg-slate-700 text-white text-xs font-medium mx-0.5 mt-1 px-1 py-0.5">Scans</button><button class="rounded rounded-xs bg-gray-600 text-white text-xs font-medium uppercase mx-0.5 mt-1 px-1 py-0.5">'+langue+'</button></div></div></a></div>');
+	}
+	//template cartes PROFIL (historique / watchlist / favoris)
+	function carteHistorique(nom, url, image, type, langue, episode){
+		//défaut : document.write('<div class="carteHistorique relative z-0 flex shrink-0 w-32 md:w-44 outline outline-sky-800 outline-1 bg-black rounded overflow-hidden my-14 mr-3 ml-2 md:ml-5 shadow-lg shadow-black hover:shadow-zinc-900 transition-all duration-200 cursor-pointer"><a class="supprHistorique absolute right-0 rounded"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 text-white hover:text-red-900 bg-black shadow-lg shadow-black outline outline-2 outline-gray-700 rounded transition-all duration-200"><path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" /></svg></a><a href="'+url+'"><img class="w-full h-30 md:h-42 object-cover transition-all duration-200 cursor-pointer" src="'+image+'" alt="'+image+'"><div class="px-4 py-2"><h1 class="text-gray-200 font-semibold text-sm text-center line-clamp-2 md:line-clamp-3 uppercase hover:text-clip">'+nom+'</h1><hr class="border-t border-slate-500 my-2"></hr><div class="flex flex-wrap justify-center"><button class="rounded rounded-xs bg-indigo-900 text-white text-xs mx-0.5 mt-1 px-1 py-0.5">'+type+'</button><button class="rounded rounded-xs bg-opacity-50 bg-blue-500 text-white text-xs mx-0.5 mt-1 px-1 py-0.5">'+langue+'</button><button class="rounded rounded-xs bg-opacity-50 bg-cyan-500 text-white text-xs mx-0.5 mt-1 px-1 py-0.5">'+episode+'</button></div></div></a></div>');
+		if(type === "Scans") document.write('<div class="carteHistorique relative z-0 flex shrink-0 w-32 md:w-44 outline outline-gray-500 outline-1 bg-zinc-900 rounded overflow-hidden my-14 mr-3 ml-2 md:ml-5 shadow-lg shadow-black hover:shadow-zinc-900 transition-all duration-200 cursor-pointer"><a class="supprHistorique absolute right-0 rounded"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 text-white hover:text-red-900 bg-black shadow-lg shadow-black outline outline-2 outline-gray-700 rounded transition-all duration-200"><path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" /></svg></a><a href="'+url+'"><img class="w-full h-30 md:h-42 object-cover transition-all duration-200 cursor-pointer" src="'+image+'" alt="'+image+'"><div class="px-4 py-2"><h1 class="text-gray-200 font-semibold text-sm text-center line-clamp-2 md:line-clamp-3 uppercase hover:text-clip">'+nom+'</h1><hr class="border-t border-slate-500 mt-2"></hr><div class="flex flex-wrap justify-center"><button class="rounded rounded-xs text-white text-xs font-medium mx-0.5 mt-1 px-1 py-0.5">'+type+'</button></div><div class="flex flex-wrap justify-center"><button class="rounded rounded-xs bg-gray-600 text-white text-xs font-medium mx-0.5 mt-1 px-1 py-0.5">'+langue+'</button><button class="rounded rounded-xs bg-slate-700 text-white text-xs font-medium mx-0.5 mt-1 px-1 py-0.5">'+episode+'</button></div></div></a></div>');
+		else document.write('<div class="carteHistorique relative z-0 flex shrink-0 w-32 md:w-44 outline outline-sky-800 outline-1 bg-slate-900 rounded overflow-hidden my-14 mr-3 ml-2 md:ml-5 shadow-lg shadow-black hover:shadow-zinc-900 transition-all duration-200 cursor-pointer"><a class="supprHistorique absolute right-0 rounded"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 text-white hover:text-red-900 bg-black shadow-lg shadow-black outline outline-2 outline-gray-700 rounded transition-all duration-200"><path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" /></svg></a><a href="'+url+'"><img class="w-full h-30 md:h-42 object-cover transition-all duration-200 cursor-pointer" src="'+image+'" alt="'+image+'"><div class="px-4 py-2"><h1 class="text-gray-200 font-semibold text-sm text-center line-clamp-2 md:line-clamp-3 uppercase hover:text-clip">'+nom+'</h1><hr class="border-t border-slate-500 mt-2"></hr><div class="flex flex-wrap justify-center"><button class="rounded rounded-xs text-white text-xs font-medium mx-0.5 mt-1 px-1 py-0.5">'+type+'</button></div><div class="flex flex-wrap justify-center"><button class="rounded rounded-xs bg-opacity-50 bg-blue-600 text-white text-xs font-medium mx-0.5 mt-1 px-1 py-0.5">'+langue+'</button><button class="rounded rounded-xs bg-opacity-50 bg-cyan-600 text-white text-xs font-medium mx-0.5 mt-1 px-1 py-0.5">'+episode+'</button></div></div></a></div>');
+	}
+	function carteWatchlist(nom, url, image){
+		document.write('<div class="carteWatchlist relative z-0 flex shrink-0 w-32 md:w-44 outline outline-sky-800 outline-1 bg-black rounded overflow-hidden my-14 mr-3 ml-2 md:ml-5 shadow-lg shadow-black hover:shadow-zinc-900 transition-all duration-200 cursor-pointer"><a class="supprWatchlist absolute right-0 rounded"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 text-white hover:text-red-900 bg-black shadow-lg shadow-black outline outline-2 outline-gray-700 rounded transition-all duration-200"><path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" /></svg></a><a href="'+url+'"><img class="w-full h-30 md:h-42 object-cover transition-all duration-200 cursor-pointer" src="'+image+'" alt="'+image+'"><div class="px-4 py-2"><h1 class="text-gray-200 font-semibold text-sm text-center line-clamp-2 md:line-clamp-3 uppercase hover:text-clip">'+nom+'</h1></div></a></div>');
+	}
+	function carteFavoris(nom, url, image){
+		document.write('<div class="carteFavori relative z-0 flex shrink-0 w-32 md:w-44 outline outline-sky-800 outline-1 bg-black rounded overflow-hidden my-14 mr-3 ml-2 md:ml-5 shadow-lg shadow-black hover:shadow-zinc-900 transition-all duration-200 cursor-pointer"><a class="supprFavoris absolute right-0 rounded"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 text-white hover:text-red-900 bg-black shadow-lg shadow-black outline outline-2 outline-gray-700 rounded transition-all duration-200"><path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" /></svg></a><a href="'+url+'"><img class="w-full h-30 md:h-42 object-cover transition-all duration-200 cursor-pointer" src="'+image+'" alt="'+image+'"><div class="px-4 py-2"><h1 class="text-gray-200 font-semibold text-sm text-center line-clamp-2 md:line-clamp-3 uppercase hover:text-clip">'+nom+'</h1></div></a></div>');
+	}
+	function carteVus(nom, url, image){
+		document.write('<div class="carteVu relative z-0 flex shrink-0 w-32 md:w-44 outline outline-sky-800 outline-1 bg-black rounded overflow-hidden my-14 mr-3 ml-2 md:ml-5 shadow-lg shadow-black hover:shadow-zinc-900 transition-all duration-200 cursor-pointer"><a class="supprVus absolute right-0 rounded"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 text-white hover:text-red-900 bg-black shadow-lg shadow-black outline outline-2 outline-gray-700 rounded transition-all duration-200"><path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" /></svg></a><a href="'+url+'"><img class="w-full h-30 md:h-42 object-cover transition-all duration-200 cursor-pointer" src="'+image+'" alt="'+image+'"><div class="px-4 py-2"><h1 class="text-gray-200 font-semibold text-sm text-center line-clamp-2 md:line-clamp-3 uppercase hover:text-clip">'+nom+'</h1></div></a></div>');
+	}
+	/* -CARTES TEMPLATES */
+	$(document).ready(function(){
+		/*+BARRE DE RECHERCHE*/
+		function load_data(query){
+			$.ajax({
+				url:"/template-php/defaut/fetch.php",
+				method:"post",
+				data:{query:query},
+				success:function(data){$('.result').html(data);}
+			});
+		}
+		$('.search_text').keyup(function(){
+			var search = $(this).val();
+			if(search != ''){load_data(search);}
+			else{load_data();}
+		});
+		/*-BARRE DE RECHERCHE*/
+		/*+GRAB SCROLL*/
+		let isDragging = false;
+		let startX, scrollLeft;
+		let activeDiv = null;
+		$('.grabScroll').on('mousedown', function(e) {
+			isDragging = true;
+			activeDiv = $(this);
+			activeDiv.addClass('dragging');
+			startX = e.pageX - activeDiv.offset().left;
+			scrollLeft = activeDiv.scrollLeft();
+		});
+		$(document).on('mousemove', function(e) {
+			if (!isDragging || !activeDiv) return;
+			e.preventDefault();
+			const x = e.pageX - activeDiv.offset().left;
+			const walk = (x - startX) * 2; // Scroll-slow multiplier
+			activeDiv.scrollLeft(scrollLeft - walk);
+		});
+		$(document).on('mouseup', function() {
+			isDragging = false;
+			if (activeDiv) {
+				activeDiv.removeClass('dragging');
+				activeDiv = null;
+			}
+		});
+		/*-GRAB SCROLL*/
+	});
+	
+/* +SCRIPT POUR MENU DEROULANT A GAUCHE */
+	// Burger menus
+	document.addEventListener('DOMContentLoaded', function() {
+		// open
+		const burger = document.querySelectorAll('.navbar-burger');
+		const menu = document.querySelectorAll('.navbar-menu');
+		if (burger.length && menu.length) {
+			for (var i = 0; i < burger.length; i++) {
+				burger[i].addEventListener('click', function() {
+					for (var j = 0; j < menu.length; j++) {
+						menu[j].classList.toggle('hidden');
+					}
+				});
+			}
+		}
+		// close
+		const close = document.querySelectorAll('.navbar-close');
+		const backdrop = document.querySelectorAll('.navbar-backdrop');
+		if (close.length) {
+			for (var i = 0; i < close.length; i++) {
+				close[i].addEventListener('click', function() {
+					for (var j = 0; j < menu.length; j++) {
+						menu[j].classList.toggle('hidden');
+					}
+				});
+			}
+		}
+		if (backdrop.length) {
+			for (var i = 0; i < backdrop.length; i++) {
+				backdrop[i].addEventListener('click', function() {
+					for (var j = 0; j < menu.length; j++) {
+						menu[j].classList.toggle('hidden');
+					}
+				});
+			}
+		}
+	});
+	/* -SCRIPT POUR MENU DEROULANT A GAUCHE */
+	/* +AUTRES */
+	/* images pas clic droit dessus */
+	$('body').on('contextmenu', 'img', function(e){return false;});
+	/* scrolls Left et Right containers */
+	function decalRight(idContainer){ document.getElementById(idContainer).scrollLeft += 1000; }
+	function decalLeft(idContainer){ document.getElementById(idContainer).scrollLeft -= 1000; }
+	/* boutton to Top */
+	function topFunction() {
+		document.body.scrollTop = 0; // Safari
+		document.documentElement.scrollTop = 0; // Chrome, Firefox, IE and Opera
+	}
+	/* -AUTRES */
+</script>
+	</head>
+	<body>
+		<!-- LEFT GRID + CONTENU + RIGHT GRID -->
+<div id="blocEntier" class="grid grid-cols-6 pb-16">
+
+<!-- LEFT GRID -->
+<!-- don't block this whole div block the one under don't be stupid thank you -->
+<div id="sousBlocLeft" class="hidden lg:block m-10 mt-0 scale-75">
+	<!-- block this div -->
+	<div id="bannLeft">
+		<!-- Adcash : Left banner -->
+		<div><script type="text/javascript">aclib.runBanner({zoneId: '8653010',});</script></div>
+		<!-- PolyBuzz : Left banner --> 
+		<!--<a href="https://www.polybuzz.ai/?utm_source=taka-anime&utm_medium=paid_referral"><img src="https://cdn.statically.io/gh/Anime-Sama/IMG/img/autres/leftban.png" class="cursor-pointer" alt=""></a> -->
+	</div>
+</div>
+
+<!-- CONTENU MILIEU -->
+<div id="sousBlocMiddle" class="col-span-6 mx-3 lg:col-span-4 lg:mx-0 mt-6 z-20">
+		<h4 class="flex flex-inline text-4xl lg:text-5xl uppercase text-white font-bold mb-10">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-11 w-11 mr-3 pb-0.5 lg:h-12 lg:w-12 lg:pb-0 lg:pt-0.5 justify-center items-center">
+				<path fill-rule="evenodd" d="M11.828 2.25c-.916 0-1.699.663-1.85 1.567l-.091.549a.798.798 0 01-.517.608 7.45 7.45 0 00-.478.198.798.798 0 01-.796-.064l-.453-.324a1.875 1.875 0 00-2.416.2l-.243.243a1.875 1.875 0 00-.2 2.416l.324.453a.798.798 0 01.064.796 7.448 7.448 0 00-.198.478.798.798 0 01-.608.517l-.55.092a1.875 1.875 0 00-1.566 1.849v.344c0 .916.663 1.699 1.567 1.85l.549.091c.281.047.508.25.608.517.06.162.127.321.198.478a.798.798 0 01-.064.796l-.324.453a1.875 1.875 0 00.2 2.416l.243.243c.648.648 1.67.733 2.416.2l.453-.324a.798.798 0 01.796-.064c.157.071.316.137.478.198.267.1.47.327.517.608l.092.55c.15.903.932 1.566 1.849 1.566h.344c.916 0 1.699-.663 1.85-1.567l.091-.549a.798.798 0 01.517-.608 7.52 7.52 0 00.478-.198.798.798 0 01.796.064l.453.324a1.875 1.875 0 002.416-.2l.243-.243c.648-.648.733-1.67.2-2.416l-.324-.453a.798.798 0 01-.064-.796c.071-.157.137-.316.198-.478.1-.267.327-.47.608-.517l.55-.091a1.875 1.875 0 001.566-1.85v-.344c0-.916-.663-1.699-1.567-1.85l-.549-.091a.798.798 0 01-.608-.517 7.507 7.507 0 00-.198-.478.798.798 0 01.064-.796l.324-.453a1.875 1.875 0 00-.2-2.416l-.243-.243a1.875 1.875 0 00-2.416-.2l-.453.324a.798.798 0 01-.796.064 7.462 7.462 0 00-.478-.198.798.798 0 01-.517-.608l-.091-.55a1.875 1.875 0 00-1.85-1.566h-.344zM12 15.75a3.75 3.75 0 100-7.5 3.75 3.75 0 000 7.5z" clip-rule="evenodd" />
+			</svg>
+			Aide technique
+		</h4>
+		<h3 class="text-sm lg:text-base text-white font-base mb-5">Vous trouverez ici une liste de résolutions aux problèmes que vous rencontrerez sur le site, les étapes numérotées sont en bas de page.</h3>
+		<h2 class="text-white text-2xl font-bold mt-6 mb-4 border-b-4 border-slate-500">Problèmes récurrents</h2>
+		<div class="w-full">
+			<h1 class="text-white text-xl font-medium mt-6 mb-4">J'ai un problème avec mon épisode ou mon chapitre :</h1>
+			<p class="text-white bg-gray-800">Essayez d'abord de changer de lecteur ou de navigateur avant de chercher une autre solution.</p>
+			<h1 class="text-white text-xl font-medium mt-6 mb-4">À propos d'éventuelles applications Taka-anime :</h1>
+			<p class="text-white bg-gray-800">Taka Anime n'a pas et ne va pas créer d'application mobile, si vous tombez sur une application "Taka-anime" sur le play store ou l'app store, elle n'est affiliée en aucun cas au site, en gros l'appli n'a été créée ni par l'équipe du site, ni avec son consentement. Faites attention à ce genre d'applications, nous ne pouvons absolument pas garantir leur sécurité ou leur contenu. Soyez prudents.</p>
+			<h1 class="text-white text-xl font-medium mt-6 mb-4">Une nouvelle fenêtre s'ouvre quand je clique sur le lecteur :</h1>
+			<p class="text-white bg-gray-800">Le lecteur 1 (principalement) contient une pub pop-up qui s'ouvre quand on clique dessus, fermez la page de pub directement et vous pourrez visionner la vidéo tranquillement.<br> Si celle-ci persiste à chaque fois que vous cliquez sur le lecteur changez de navigateur.</p>
+			<h1 class="text-white text-xl font-medium mt-6 mb-4">Des pubs inappropriées surgissent sur les lecteurs vidéo :</h1>
+			<p class="text-white bg-gray-800">Les lecteurs vidéo sont indépendants de notre contrôle, et malheureusement, nous ne pouvons les influencer. Taka anime s'efforce de fournir des vidéos avec les lecteurs les plus fiables et fonctionnels disponibles. Nous vous recommandons de changer de lecteur si possible, afin d'éviter les publicités indésirables.</p>
+			<h1 class="text-white text-xl font-medium mt-6 mb-4">Le lecteur m'affiche ça :</h1>
+			<p class="text-white bg-gray-800">Si vous avez ce message, essayez d'actualiser plusieurs fois. Sinon changez de navigateur. Si rien ne change il faut patienter jusqu'à que ça revienne.</p>
+			<img class="mt-2 h-64" src="https://cdn.statically.io/gh/Taka-anime/IMG/img/autres/aide_wait_5.jpg"/>
+						<h1 class="text-white text-xl font-medium mt-6 mb-4">Mon historique bug, il n'y a que le dernier visionnage qui s'actualise :</h1>
+			<p class="text-white bg-gray-800">Essayez de visionner un nouvel anime pour rafraîchir votre liste, si ça ne marche pas essayez de patienter quelque temps. Sinon vous pouvez supprimer les données de votre navigateur pour tout réinitialiser.</p>
+			<h1 class="text-white text-xl font-medium mt-6 mb-4">La vidéo charge souvent :</h1>
+			<p class="text-white bg-gray-800">Il arrive que les lecteurs vidéo soient saturés, changez de lecteur ou voyez de votre côté.</p>
+			<img class="mt-2 h-64" src="https://cdn.statically.io/gh/Taka-anime/IMG/img/autres/aide_chargement.png"/>
+			<h1 class="text-white text-xl font-medium mt-6 mb-4">Chargement infini sur les scans :</h1>
+			<p class="text-white bg-gray-800">Le chapitre ne marche plus, n'hésitez pas à nous le signaler.</p>
+			<img class="mt-2 h-64" src="https://cdn.statically.io/gh/Taka-anime/IMG/img/autres/aide_infini_scans.png"/>
+			<h1 class="text-white text-xl font-medium mt-6 mb-4">Il y a un problème de traduction ou d'orthographe dans un épisode/scan :</h1>
+			<p class="text-white bg-gray-800">Taka-anime ne s'occupe pas des traductions, voyez ça directement avec les équipes qui réalisent ce travail.</p>
+			<h1 class="text-white text-xl font-medium mt-6 mb-4">Je n'arrive pas à télécharger les épisodes :</h1>
+			<p class="text-white bg-gray-800">Taka anime n'est pas un site de téléchargement, certains lecteurs/appareils peuvent le permettre en restant appuyer sur le lecteur (ou clic droit) mais on ne peut rien vous apporter de plus si ça ne marche pas.</p>
+			<h1 class="text-white text-xl font-medium mt-6 mb-4">Je n'arrive pas à caster la vidéo sur ma télé :</h1>
+			<p class="text-white bg-gray-800">Essayez de changer de navigateur ou de lecteur, ce ne sont pas nos lecteurs donc les solutions sont plutôt aléatoires.</p>
+			<!-- autre
+			<h1 class="text-white text-xl font-medium mt-6 mb-4">Le site est décalé vers la gauche :</h1>
+			<p class="text-white bg-gray-800">Votre bloqueur de pub crée ce bug de style, retirez le ou faites avec si vous ne voulez pas de pubs.</p>
+			<h1 class="text-white text-xl font-medium mt-6 mb-4">Accéder au site me fait télécharger un fichier :</h1>
+			<p class="text-white bg-gray-800">Videz le cache de votre navigateur, sinon utilisez la navigation privée ou un autre navigateur.</p>
+			<h1 class="text-white text-xl font-medium mt-6 mb-4">Mon historique bug, il n'y a que le dernier visionnage qui s'actualise :</h1>
+			<p class="text-white bg-gray-800">Supprimez les données de votre navigateur et ça devrait remarcher normalement.</p>
+			<h1 class="text-white text-xl font-medium mt-6 mb-4">N'hésitez pas à utiliser le lecteur AS quand il est disponible ! (Bouton bleu à droite de la sélection de lecteurs).</h1>
+			<img class="mt-2" src="https://cdn.statically.io/gh/Taka-anime/IMG/img/autres/aide_lecteur_as.png"/>
+			<h1 class="text-white text-xl font-medium mt-6 mb-4">Mon problème persiste sur les vidéos/scans :</h1>
+			<p class="text-white bg-gray-800">Changez de navigateur ou essayez l'étape 9 en bas de cette page.</p>
+			<img class="mt-2 h-64" src="https://cdn.statically.io/gh/Taka-anime/IMG/img/autres/aide_cookies.png"/>
+			<h1 class="text-white text-xl font-medium mt-6 mb-4">Je ne peux pas accéder au planning et à la recherche d'oeuvres</h1>
+			<p class="text-white bg-gray-800">Le problème vient de votre anti-virus ou d'un bloqueur de pubs, essayez de voir de votre coté.</p>
+						<h1 class="text-white text-xl font-medium mt-6 mb-4">Pubs sur le lecteur Sibnet</h1>
+			<p class="text-white bg-gray-800">Des pubs vidéo suviennent au début des épisodes sur le lecteur Sibnet, malheureusement ces lecteurs ne sont aucunement lié à nous et nous ne pouvons pas y faire grand chose. Changez de lecteur si vous ne voulez pas les avoir.</p>
+			<h1 class="text-white text-xl font-medium mt-6 mb-4">Panne sur le lecteur Myvi</h1>
+			<p class="text-white bg-gray-800">Certains épisodes qui sont avec le lecteur myvi ont quelques problèmes (aucun rapport avec le site). Nous allons essayer de vous mettre un lecteur de rechange mais cela risque de prendre quelque temps.</p>
+			<h1 class="text-white text-xl font-medium mt-6 mb-4">Message en Russe</h1>
+			<p class="text-white bg-gray-800">Si vous avez déjà changé de lecteur, essayez en navigation privée ou sur un autre navigateur. Si ça ne change rien signalez le.</p>
+			<img class="mt-2 h-64" src="https://cdn.statically.io/gh/Anime-Sama/IMG/img/autres/aide_messagerusse.png"/>
+			<h1 class="text-white text-xl font-medium mt-6 mb-4">La refonte ne marche pas bien sur mon appareil</h1>
+			<p class="text-white bg-gray-800">Vous utilisez très probablement une ancienne version de votre navigateur (Safari en général), notre site ne s'adapte pas bien pour ce genre de versions obsolètes. Mettez à jour votre appareil ou changez de navigateur (Google Chrome de préférence). Pour ce qui est de la télévision, nous n'avons jamais essayé d'adapter le site pour la TV essayez de régler le problème de votre coté.</p>
+			<h1 class="text-white text-xl font-medium mt-6 mb-4">Mon antivirus bloque le site</h1>
+			<p class="text-white bg-gray-800">Allez sur votre antivirus -> Menu -> Paramètres -> Général -> Exclusions -> Ajouter une exclusion -> Entrer <b class="text-sky-400">"https://anime-sama.fr"</b>.</p>
+			<img class="mt-2 h-64" src="https://cdn.statically.io/gh/Taka-anime/IMG/img/autres/aide_avast.png"/>
+			<h1 class="text-white text-xl font-medium mt-6 mb-4">Le mode plein écran ne marche pas :</h1>
+			<p class="text-white bg-gray-800">Passez en mode paysage avant de le faire sinon actualisez ou changez de navigateur.</p>
+			<h1 class="text-white text-xl font-medium mt-6 mb-4">La vidéo n'émet aucun son :</h1>
+			<p class="text-white bg-gray-800">Modifiez le volume à l'aide de la barre du lecteur en bas à droite.</p>
+			-->
+		</div>
+		<h2 class="text-white text-2xl font-bold mt-10 mb-4 border-b-4 border-slate-500">Liste de solutions diverses</h2>
+		<div class="w-full">
+			<h1 class="text-white text-xl mt-6 mb-4"><b>1) </b>Vérifier si votre connexion internet est bonne (téléchargements, chargement de vidéos, mises à jours...).</h1>
+			<h1 class="text-white text-xl mt-6 mb-4"><b>2) </b>Actualiser la page.</h1>
+			<h1 class="text-white text-xl mt-6 mb-4"><b>3) </b>Vérifier que le lien est correct.</h1>
+			<h1 class="text-white text-xl mt-6 mb-4"><b>4) </b>Changer de lecteur.</h1>
+			<h1 class="text-white text-xl mt-6 mb-4"><b>5) </b>Vérifier que vous n'êtes pas en navigation privée, et si vous ne l'êtes pas essayez en navigation privée.</h1>
+			<h1 class="text-white text-xl mt-6 mb-4"><b>6) </b>Changer de navigateur.</h1>
+			<h1 class="text-white text-xl mt-6 mb-4"><b>7) </b>Si vous avez un VPN, changer de pays.</h1>
+			<h1 class="text-white text-xl mt-6 mb-4"><b>8) </b>Vider le cache :</h1>
+			<p class="text-white bg-gray-800">Sur PC :</p>
+			<p class="text-white bg-gray-800"><u>Chrome/Brave/Opera/Edge...</u> : Paramètres -> Rechercher "cache" -> "Effacer les données de navigation" -> "Images et fichiers en cache" -> "Effacer les données".</p>
+			<p class="text-white bg-gray-800"><u>Firefox</u> : Paramètres -> "Vie privée et sécurité" -> "Cookies et données de sites" -> "Effacer les données…".</p>
+			<br>
+			<p class="text-white bg-gray-800">Sur mobile :</p>
+			<p class="text-white bg-gray-800"><u>Chrome</u> : Paramètres ->  Confidentialité et sécurité -> Effacer les données de navigation -> Cocher "Images et fichiers en cache" -> "Effacer les données".</p>
+			<p class="text-white bg-gray-800"><u>Firefox</u> : Paramètres -> "Vie privée et sécurité" -> "Cookies et données de sites" -> "Effacer les données…".</p>
+			<p class="text-white bg-gray-800"><u>Safari</u> : Réglages -> "Safari" -> "Effacer historique et données de site" -> Confirmer.</p>
+			<h1 id="9" class="text-white text-xl font-medium mt-6 mb-4"><b>9) </b>Autoriser tous les cookies :</h1>
+			<p class="text-white bg-gray-800">Sur PC :</p>
+			<p class="text-white bg-gray-800"><u>Chrome/Brave/Opera/Edge...</u>  : Paramètres -> Rechercher "cookies" -> "Cookies et autres données des sites" -> Cocher "Autoriser tous les cookies".</p>
+			<br>
+			<p class="text-white bg-gray-800">Sur mobile :</p>
+			<p class="text-white bg-gray-800"><u>Chrome/Brave/Opera/Edge...</u>  : Paramètres -> Paramètre de site (en bas) -> Cookies : Autorisé</p>
+			<p class="text-white bg-gray-800"><u>Safari</u>  : Paramètres -> Safari -> Décocher : "Bloquer tous les cookies"</p>
+			<h1 class="text-white text-xl font-medium mt-6 mb-4"><b>10) </b>Nous expliquer votre problème sur WhatsApp (ou autre) rubrique "SIGNALEMENTS & INFOS".</h1>
+		</div>
+		<h2 class="text-white text-2xl font-bold mt-10 mb-4 border-b-4 border-slate-500">Politique de confidentialité</h2>
+		<div class="w-full">
+			<h1 class="text-white text-xl mt-6 mb-4">Nous sommes déterminés à protéger votre vie privée et vos données personnelles. Nous sommes conscients de l'importance de la confidentialité et de la sécurité des informations que vous partagez avec nous. Dans le cadre de notre engagement envers la transparence et la protection des données, nous avons élaboré cette politique de confidentialité pour vous informer sur la manière dont nous collectons, utilisons et partageons vos informations personnelles. Nous respectons toutes les lois et réglementations applicables en matière de protection des données et travaillons constamment à améliorer nos pratiques de confidentialité pour mieux protéger vos informations personnelles. Nous nous engageons à être transparents et à vous donner un contrôle total sur vos données personnelles. Si vous avez des questions ou des préoccupations concernant notre politique de confidentialité, n'hésitez pas à nous contacter.</h1>
+		</div>
+		<h2 id="dmca" class="text-white text-2xl font-bold mt-10 mb-4 border-b-4 border-slate-500">DMCA</h2>
+		<div class="w-full">
+			<h1 class="text-white text-xl mt-6 mb-4">
+			Si vous estimez qu’un contenu accessible via notre site porte atteinte à vos droits, nous vous invitons à contacter directement la plateforme qui l’héberge avec une demande sérieuse de suppression accompagnée des informations suivantes :
+				<li>Une signature physique ou électronique d’une personne autorisée à agir au nom du titulaire du droit d’auteur concerné.</li>
+				<li>Une identification précise de l’œuvre protégée.</li>
+				<li>Une description claire du contenu supposé contrefaisant ainsi que son emplacement exact.</li>
+				<li>Une déclaration attestant de votre bonne foi quant à l’illégalité de l’utilisation du contenu.</li>
+				<li>Une déclaration sous peine de parjure attestant de l’exactitude des informations fournies et de votre autorité à agir pour le compte du titulaire des droits.</li>
+			Toute demande de suppression doit être adressée aux services d’hébergement concernés. Merci de votre compréhension.
+		</h1>
+		</div>
+				<!-- BOTTOM -->
+		<div class="items-center justify-center align-center">
+			<p class="text-sm text-white text-center font-medium opacity-50 mt-32 pb-2">Cliquer sur une pub est le meilleur moyen de nous soutenir.</p>
+			<!-- Banners -->
+			<div id="bannBot" class="pt-5 scale-75">
+				<!-- PolyBuzz : Bottom banner --> 
+				<!--<a href="https://www.polybuzz.ai/?utm_source=taka-anime&utm_medium=paid_referral"><img src="https://cdn.statically.io/gh/Taka-anime/IMG/img/autres/botban.gif" alt=""></a>-->
+				<!-- Adcash : Bottom banner -->
+				<div><script type="text/javascript">aclib.runBanner({zoneId: '8653014',});</script></div>
+			</div>
+			<!-- Squares -->
+			<div id="squBot" class="pt-1 scale-75 sm:inline-flex">
+				<!-- PolyBuzz : Bottom square --> 
+				<!--<a href="https://www.polybuzz.ai/?utm_source=taka-anime&utm_medium=paid_referral"><img src="https://cdn.statically.io/gh/Taka-anime/IMG/img/autres/botsq.gif" alt=""></a>-->
+				<!-- Monetag : Bottom square -->
+				<script async data-cfasync="false" data-size="300x250" data-category="common" data-id="dl-banner-300x250" data-zone="7809940" src="//koaptouw.com/btag.min.js"></script>
+				<!--anime <script async data-cfasync="false" data-size="300x250" data-category="anime" data-id="dl-banner-300x250" data-zone="7809940" src="//uchaihoo.com/btag.min.js"></script>-->
+				<!-- Adcash : Bottom square -->
+				<div><script type="text/javascript">aclib.runBanner({zoneId: '8653002',});</script></div>
+			</div>
+		</div>
+	</div>
+	<!-- RIGHT GRID -->
+	<!-- don't block this whole div block the one under don't be stupid thank you -->
+	<div id="sousBlocRight" class="hidden lg:block m-10 mt-0 scale-75">
+		<!-- block this div -->
+		<div id="bannRight">
+			<!-- Adcash : Right banner -->
+			<div><script type="text/javascript">aclib.runBanner({zoneId: '8653006',});</script></div>
+			<!-- PolyBuzz : Right banner --> 
+			<!--<a href="https://www.polybuzz.ai/?utm_source=taka-anime&utm_medium=paid_referral"><img src="https://cdn.statically.io/gh/Taka-anime/IMG/img/autres/rightban.png" alt=""></a>-->
+		</div>
+	</div>
+
+</div>
+	</body>
+	<footer>
+		<footer class="p-4 sm:p-6 border-t-2 border-sky-900" style="background: rgb(0,0,0);background: linear-gradient(90deg, rgba(0,0,0,0.9624935535902388) 100%, rgba(0,0,0,0.9596845648261938) 100%);">
+	<div class="grid grid-cols-3 md:grid-cols-5 text-xs md:text-sm">
+		<div class="md:ml-6">
+			<h3 class="mb-6 font-semibold text-gray-900 uppercase dark:text-white">Qui sommes-nous</h3>
+			<ul>
+				<li class="mb-4 text-gray-400 font-semibold">
+					 Taka anime est un site de référencement et de catalogage avec le moins de publicités dérangeantes possibles, créé par des passionnés de l’animation et du divertissement APAC.
+				</li>
+			</ul>
+		</div>
+		<div class="ml-3 md:ml-16">
+			<a href="https://anime-sama.fr/aide/#dmca"><h3 class="mb-6 font-semibold text-gray-900 uppercase dark:text-white">DMCA</h3></a>
+			<ul>
+				<li class="mb-4 text-gray-400 font-semibold">
+					Taka-anime n'héberge aucune vidéo sur son serveur. Contactez directement la plateforme d'hébergement vidéo pour toutes réclamations de droits relatifs aux contenus en question.
+				</li>
+			</ul>
+		</div>
+		<div class="ml-3 md:ml-20">
+			<h3 class="mb-6 font-semibold text-gray-900 uppercase dark:text-white">Contact</h3>
+			<ul>
+				<li class="mb-4">
+					<a href="https://discord.gg/taka-anime" target="_blank"
+						class="text-gray-600 hover:underline dark:text-gray-400 font-semibold">Discord</a>
+				</li>
+				<li class="mb-4">
+					<a href="https://twitter.com/Taka-anime" target="_blank"
+						class="text-gray-600 hover:underline dark:text-gray-400 font-semibold">Twitter</a>
+				</li>
+			</ul>
+		</div>		
+	</div>
+	<hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8">
+	<div class="flex items-center justify-between">
+		<a href="https://taka-anime.onrender.com/">
+			<img class="h-9 hidden lg:block object-cover object-right hover:brightness-50 transition-all duration-200" src="https://cdn.statically.io/gh/Taka-anime/IMG/img/autres/logo_banniere.png" alt="Logo TA bannière"/>
+			<img class="h-9 block lg:hidden object-cover object-right hover:brightness-50 transition-all duration-200" src="https://cdn.statically.io/gh/Taka-anime/IMG/img/autres/logo.png" alt="Logo TA"/>
+		</a>
+		<span class="flex text-xs md:text-sm text-gray-500 font-bold sm:text-center dark:text-gray-400">© Taka-anime - Tous droits réservés.</span>
+	</div>
+
+</footer>
+	</footer>
+
 </html>
