@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Commande de Panel store illimité</title>
+  <meta name="description" content="Passe ta commande de panel sécurisé et rapide avec Store panel." />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Dev Ask" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5604169839900644" crossorigin="anonymous"></script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: radial-gradient(ellipse at top left, #0f0c29, #302b63, #24243e);
+      color: #fff;
+      padding: 20px;
+    }
+    h1 {
+      font-family: 'Orbitron', sans-serif;
+      text-align: center;
+      font-size: 2.5rem;
+      color: #00ffe0;
+      text-shadow: 0 0 12px #00ffe0;
+      margin-bottom: 30px;
+    }
+    .intro {
+      max-width: 700px;
+      margin: auto;
+      text-align: center;
+      color: #ccc;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+    form {
+      max-width: 500px;
+      margin: 30px auto;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 30px 25px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0,255,255,0.15);
+    }
+    p {
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+    #panelChoisi {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #00ffe0;
+    }
+    input {
+      width: 100%;
+      padding: 14px;
+      margin: 20px 0;
+      border-radius: 10px;
+      border: none;
+      background: rgba(255, 255, 255, 0.15);
+      color: white;
+      font-size: 1rem;
+    }
+    .btns {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    button {
+      width: 100%;
+      padding: 14px;
+      border: none;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #00ffe0, #006eff);
+      color: #000;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    button:hover {
+      transform: scale(1.03);
+      background: linear-gradient(135deg, #00d2ff, #00ffe0);
+    }
+    .back-home {
+      text-align: center;
+      margin-top: 25px;
+    }
+    .back-home a {
+      color: #00ffe0;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    footer {
+      margin-top: 50px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+    footer span {
+      color: #00ffe0;
+      font-weight: bold;
+    }
+    footer a {
+      color: #00ffe0;
+      margin: 0 6px;
+      text-decoration: none;
+    }
+    @media screen and (max-width: 480px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+      form {
+        padding: 20px;
+      }
+
+   input, button {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Commande de Panel</h1>
+
+  <main>
+    <div class="intro">
+      <p>Chez Panel Store, nous simplifions la gestion de vos services en ligne grâce à nos panels automatisés. Sélectionnez votre panel préféré, entrez votre numéro WhatsApp ou Telegram, et recevez instantanément votre lien ou configuration personnalisée.</p>
+      <p>Pourquoi choisir Panel Stores ? Nos panels sont conçus pour offrir une expérience fluide, fiable et personnalisée. Que vous soyez développeur freelance, administrateur réseau ou simple passionné de technologie, notre équipe vous accompagne dans vos projets avec des solutions prêtes à l’emploi.</p>
+      <p>Nous privilégions la sécurité, la rapidité et la simplicité d’utilisation. Nos outils sont régulièrement mis à jour pour s’adapter aux nouvelles tendances du marché digital.</p>
+    </div>
+    <form>
+      <p>Panel sélectionné : <span id="panelChoisi">Aucun</span></p>
+      <input type="text" id="numeroUser" placeholder="Ton numéro WhatsApp ou Telegram" required />
+      <div class="btns">
+        <button type="button" onclick="envoyerWhatsApp()">Envoyer sur WhatsApp</button>
+      </div>
+    </form>
+  </main>
+
+  <div class="back-home">
+    <a href="index.html">← Retour à l'accueil</a>
+  </div>
+
+  <footer>
+    Développé avec passion par <span>Dev Ask</span><br>
+    Tous droits réservés © 2025
+  </footer>
+
+  <script>
+    const panel = new URLSearchParams(window.location.search).get('panel');
+    document.getElementById('panelChoisi').innerText = panel || "Aucun";
+    function envoyerWhatsApp() {
+      const numero = '24105896183' document.getElementById('numeroUser').value.trim();
+      if (!numero) return alert("Veuillez entrer votre numéro.");
+      const message = `Commande de panel :\nPanel : ${panel}\nClient : ${numero}`;
+      const numAdmin = '';
+      window.open(`https://wa.me/${numAdmin}?text=${encodeURIComponent(message)}`, '_blank');
+    }
+  </script>
+
+</body>
+</html>
