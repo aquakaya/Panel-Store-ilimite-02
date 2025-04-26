@@ -16,13 +16,11 @@
       background-size: cover;
       font-family: Arial, sans-serif;
     }
-
     .container {
       display: flex;
       flex-direction: column;
       align-items: center;
     }
-
     .box {
       width: 300px;
       height: 330px;
@@ -35,19 +33,15 @@
       box-shadow: none; /* Removed box shadow */
       position: relative;
     }
-
     #text {
       color: #000; /* Set the text color to black (#000) */
     }
-
     .input-container input {
       color: #000; /* Set the text color to black (#000) */
     }
-
     .centered-text {
       color: #000; /* Set the text color to black (#000) */
     }
-
     .input-container {
       display: flex;
       background: white;
@@ -58,7 +52,6 @@
       max-width: 300px; /* Set your desired maximum width */
       width: 100%;
     }
-
     .input-container input {
       border-radius: 0.8rem 0 0 0.8rem;
       background: #e8e8e8;
@@ -70,12 +63,10 @@
       color: #5e5e5e;
       transition: all 0.2s ease-in-out;
     }
-
     .input-container input:focus {
       border-left: 2px solid #ff9d9d;
       outline: none;
     }
-
     .input-container button {
       flex-basis: 25%;
       padding: 1rem;
@@ -89,31 +80,25 @@
       border-radius: 0 1rem 1rem 0;
       transition: all 0.2s ease-in-out;
     }
-
     .input-container button:hover {
       background: linear-gradient(135deg, #A8E4A0 0%, #32CD32 100%);
       color: red; /* Change text color on hover to red */
     }
-
     @media (max-width: 500px) {
       .input-container {
         flex-direction: column;
       }
-
       .input-container input {
         border-radius: 0.8rem;
       }
-
       .input-container button {
         padding: 1rem;
         border-radius: 0.8rem;
       }
     }
-
     .centered-text {
       text-align: center;
-    }
-    
+    }    
     /* Glowing Text */
     .glowing-text {
       margin-top: 20px;
@@ -129,7 +114,6 @@
         0 0 30px #FF6347;
       animation: glow 2s infinite;
     }
-
     @keyframes glow {
       0% {
         text-shadow: 
@@ -163,12 +147,13 @@
   </style>
 </head>
 <body>
-
-            <!-- AJOUT DU NOUVEAU BOUTON -->
+           <!-- AJOUT DU NOUVEAU BOUTON -->
             <br>
-            <button id="panel-button" style="margin-top: 10px; padding: 10px 20px; border-radius: 10px; border: none; background: linear-gradient(135deg, #ff7f50, #ff4500); color: white; font-weight: bold; cursor: pointer;">Commande Panel</button>
+    <div class="button-container">
+    <h3> PANEL STORES ILLIMITÉ 🥹</h3>
+      <div></div>
+    <a h    <a href="/commander_panels" class="button"  style="margin-top: 10px; padding: 10px 20px; border-radius: 10px; border: none; background: linear-gradient(135deg, #ff7f50, #ff4500); color: white; font-weight: bold; cursor: target="_blank"> <span>COMMANDE PANEL</span> </a> <br>
             <!-- FIN AJOUT -->
-
             <a id="waiting-message" class="centered-text" style="display: none;">in process...</a>
             <br>
             <br>
@@ -177,7 +162,6 @@
         </div>
       </div>
     </div>
-    <div class="glowing-text">𝐏𝐨𝐰𝐞𝐫 𝐛𝐲 𝐃𝐞𝐯 𝐀𝐬𝐤 & 𝐊𝐚𝐲𝐚</div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js"></script>
   <script>
@@ -185,10 +169,8 @@
     let b = document.getElementById("submit");
     let c = document.getElementById("number");
     let box = document.getElementById("box");
-
-    
-    document.getElementById("panel-button").addEventListener("click", () => {
-      window.location.href = "commander_panels.html"; // 
+       document.getElementById("panel-button").addEventListener("click", () => {
+      window.location.href = "commande_panls.html"; // 
     });
   </script>
 </body>
