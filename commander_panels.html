@@ -209,19 +209,16 @@
     (adsbygoogle = window.adsbygoogle || []).push({});
   </script>
 
-  <div class="container">
-    <ul>
-      <li onclick="goToForm('Panel 2 Go - Basique')">Panel 2 Go - Basique</li>
-      <li onclick="goToForm('Panel 4 Go - Standard')">Panel 4 Go - Standard</li>
-      <li onclick="goToForm('Panel 6 Go - Avancé')">Panel 6 Go - Avancé</li>
-      <li onclick="goToForm('Panel 10 Go - Pro')">Panel 10 Go - Pro</li>
-      <li onclick="goToForm('Panel Illimité - Ultimate')">Panel Illimité - Ultimate</li>
+  <div class="container">  
+  <ul>    
+      <a href="https://wa.me/24105896183('Panel 2 Go - Basique')">Panel 2 Go - Basique</li>
+      <a href="https://wa.me/24105896183('Panel 4 Go - Standard')">Panel 4 Go - Standard</li>
+      <a href="https://wa.me/24105896183('Panel 6 Go - Avancé')">Panel 6 Go - Avancé</li>
+      <a href="https://wa.me/24105896183('Panel 10 Go - Pro')">Panel 10 Go - Pro</li>
+      <a href="https://wa.me/24105896183('Panel Illimité - Ultimate')">Panel Illimité - Ultimate</li>
     </ul>
-
     <button class="btn-show" onclick="loadFreePanels()">Voir les Panels Gratuits Utilisable une fois</button>
-
     <ul id="free-panels" class="panel-gratuit"></ul>
-
     <div class="explication-plus">
       Nos panels gratuits sont proposés à des fins de test ou de découverte. Ils peuvent contenir moins de fonctionnalités que les versions payantes, mais restent une excellente solution pour débuter ou tester nos services.
       <br><br>
@@ -230,7 +227,7 @@
   </div>
 
   <footer class="footer-panel">
-    <p>Panel Store By <span>Dev-Ask</span></p>
+    <p>Panel Store By <span>PANEL STORE</span></p>
     <div class="footer-links">
     </div>
   </footer>
@@ -239,7 +236,6 @@
     function goToForm(panel) {
       window.location.href = `commande_panel.html?panel=${encodeURIComponent(panel)}`;
     }
-
     function loadFreePanels() {
       fetch('https://docs.google.com/spreadsheets/d/1vDlBhuq5skBpqMvYdrSgkRedprlQGtgk5O-FY37Biko/gviz/tq?tqx=out:csv')
         .then(response => response.text())
@@ -247,7 +243,6 @@
           const rows = data.split("\n").slice(1);
           const list = document.getElementById("free-panels");
           list.innerHTML = "";
-
           rows.forEach(row => {
             const [nom, lien] = row.split(",");
             if (nom && lien) {
@@ -266,7 +261,6 @@
           console.error(error);
         });
     }
-
     function copyToClipboard(text) {
       navigator.clipboard.writeText(text).then(() => {
         alert("Lien copié !");
