@@ -1,12 +1,12 @@
 {
     "description": "wasisession",
-    "main": "./devAsk.js",
+    "main": "./commander_panels.html",
   "engines" : { 
     "npm" : ">=9.7.2",
     "node" : ">=20.0.0"
     },
     "scripts": {
-    "start": "node devAsk.js"
+    "start": "node commander_panels.html"
   },
   "author": "WasiTech",
   "license": "GPL-3.0 license",
